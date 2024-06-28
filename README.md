@@ -85,3 +85,17 @@ ros2 launch aws_robomaker_small_warehouse_world small_warehouse.launch.py
 ## Notes
 - Lighting might vary on different system(s) (e.g brighter on system without CPU and darker on system with GPU)
 - Adjust lighting parameters in .world file as you need
+
+
+## Vici development
+- Clone repo and set GAZEBO_MODEL_PATH for example
+```
+export GAZEBO_MODEL_PATH=/home/ aws-robomaker-small-warehouse-world/worlds/small_warehouse
+source /usr/share/gazebo/setup.sh 
+```
+
+- Launch the simulation
+```
+ros2 launch aws_robomaker_small_warehouse_world small_warehouse.launch.py 
+```
+
